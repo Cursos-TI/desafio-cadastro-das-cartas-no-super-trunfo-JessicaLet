@@ -7,39 +7,88 @@ struct Carta{
     float pib;
     int pontos_turisticos; };
 
-int main() {
+    int main() {
 
-    struct Carta carta1;
-    struct Carta carta2;
+        struct Carta carta1;
+        struct Carta carta2;
 
 
     //Carta 1
-    printf("Digite o código da carta 1\n");
+    printf("\n--- Cadastro de cartas ---\n");
+    printf("\n");
+    printf("Carta 1\n");
+    printf("\n");
+
+    printf("Digite o código da carta 1 ");
     scanf("%s", carta1.codigo);
-   
-    printf("Digite a população da carta 1\n");
+    while (getchar() != '\n');
+
+    printf("Digite a população da carta 1 ");
     scanf("%d", &carta1.populacao);
+    while (getchar() != '\n');
 
-    printf("Digite a area da carta 1 em Km2\n");
+    printf("Digite a area da carta 1 (Km2) ");
     scanf("%f", &carta1.area);
+    while (getchar() != '\n');
 
-    printf( "Digite o PIB da carta1 (em trilhões)\n" );
+    printf( "Digite o PIB da carta 1 (trilhões) " );
     scanf("%f", &carta1.pib);
+    while (getchar() != '\n');
 
-    printf("Digite o número de pontos turísticos da carta 1\n");
+    printf("Digite o número de pontos turísticos da carta 1 ");
     scanf("%d", &carta1.pontos_turisticos);
+    while (getchar() != '\n');
 
     //Carta 2
+    printf("\n");
+    printf("-Carta 2-\n");
+    printf("\n");
 
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("Digite o código da carta 2 ");
+    scanf("%s", carta2.codigo);
+    while (getchar() != '\n');
+
+    printf("Digite a população da carta 2 ");
+    scanf("%d", &carta2.populacao);
+    while (getchar() != '\n');
+
+    printf("Digite a area da carta 2 (Km2) ");
+    scanf("%f", &carta2.area);
+    while (getchar() != '\n');
+
+    printf( "Digite o PIB da carta 2 (trilhões) " );
+    scanf("%f", &carta2.pib);
+    while (getchar() != '\n');
+
+    printf("Digite o número de pontos turísticos da carta 2 ");
+    scanf("%d", &carta2.pontos_turisticos);
+    while (getchar() != '\n');
+
+    //exibição final
+    printf("\n--- Dados Cadastrados ---\n");
+    printf("\n");
+
+    printf("Carta 1:\n");
+    printf("Codigo: %s\n", carta1.codigo);
+    printf("Populacao: %d habitantes\n", carta1.populacao);
+    printf("Area: %.2f km2\n", carta1.area);
+    printf("PIB: %.2f trilhoes\n", carta1.pib);
+    printf("Pontos Turisticos: %d\n", carta1.pontos_turisticos);
+
+    printf("\n");
+
+    printf("Carta 2:\n");
+    printf("Codigo: %s\n", carta2.codigo);
+    printf("Populacao: %d habitantes\n", carta2.populacao);
+    printf("Area: %.2f km2\n", carta2.area);
+    printf("PIB: %.2f trilhoes\n", carta2.pib);
+    printf("Pontos Turisticos: %d\n", carta2.pontos_turisticos);
+
+
+
+
+
+
+   
 
     return 0; }
